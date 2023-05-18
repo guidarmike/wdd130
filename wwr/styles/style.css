@@ -119,3 +119,7 @@ footer p {
 footer p a:hover {
     text-decoration: underline;
 }
+
+.socialmedia {
+    width: 80px;
+}
