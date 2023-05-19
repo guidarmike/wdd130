@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=PT+Serif:ital@1&display=swap');
+
+.home-title {
+    font-family: 'Fira Sans', 'PT Serif', sans-serif;
+    font-style: italic;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
 #content {
     max-width: 1600px;
     margin: 0 auto;
+}
+
+#logo_link {
+    padding-top: 5px;
 }
 
 #hero-img {
@@ -13,6 +26,7 @@ nav a {
     text-align: center;
     color: #AED6EA;
     text-decoration: none;
+    padding: 35px;
 }
 
 #hero-msg h1,
@@ -34,6 +48,14 @@ main section {
 
 body {
     background-color: #E2EDF4;
+    font-family: "PT Serif", Helvetica, sans-serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    margin: 0;
 }
 
 header {
@@ -58,6 +80,10 @@ h4 {
     background-color: #AED6EA;
     color: #063460;
     text-decoration: underline;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 
 .book:hover,
@@ -66,12 +92,24 @@ h4 {
     color: #E2EDF4;
 }
 
+.rivers-card,
+.camping-card,
+.rapids-card {
+    margin: 200px 0;
+}
+
 #background {
     background-color: #063460;
 }
 
+main section img {
+    box-sizing: border-box;
+}
+
 .msg {
     background-color: #AED6EA;
+    line-height: 1.5em;
+    padding: 35px;
 }
 
 .msg h2 {
@@ -80,10 +118,15 @@ h4 {
 
 .msg p {
     color: #063460;
+    font-size: .8em;
+    padding: 15px;
 }
 
 footer {
     background-color: #AED6EA;
+    padding: 25px 50px;
+    margin-top: 200px;
+    font-size: 75%;
 }
 
 footer a {
@@ -96,12 +139,17 @@ footer a.external-link:hover {
     color: #E2EDF4;
 }
 
+footer .social img {
+    padding-top: 15px;
+}
+
 .logo {
     width: 180px;
 }
 
 .icon {
     width: 60px;
+    padding-top: 10px;
 }
 
 #hero-img {
@@ -110,6 +158,8 @@ footer a.external-link:hover {
 
 .card-img {
     width: 25%;
+    border: 10px solid #063460;
+
 }
 
 footer p {
@@ -122,4 +172,9 @@ footer p a:hover {
 
 .socialmedia {
     width: 80px;
+}
+
+.mountains {
+    margin-top: 70px;
+    margin-bottom: 150px;
 }
