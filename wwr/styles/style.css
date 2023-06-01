@@ -102,10 +102,6 @@ nav a:hover {
     color: #E2EDF4;
 }
 
-h4 {
-    color: #063460;
-}
-
 .home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
