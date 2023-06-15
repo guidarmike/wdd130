@@ -199,15 +199,13 @@ nav a:hover {
     margin-bottom: 15px;
 }
 
-.book2:hover:hover {
-    background-color: #1C699C;
-    color: #E2EDF4;
+.button-box {
+    padding: 15px;
 }
 
-#another_background {
-    background-color: #063460;
-    grid-column: 1/11;
-    grid-row: 4/9;
+.book2:hover {
+    background-color: #1C699C;
+    color: #E2EDF4;
 }
 
 main section img {
