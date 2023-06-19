@@ -75,6 +75,12 @@ main section {
     height: 725px;
 }
 
+.contactus-background {
+    grid-column: 5/7;
+    grid-row: 2/3;
+    justify-self: center;
+}
+
 body {
     background-color: #E2EDF4;
     font-family: "PT Serif", Helvetica, sans-serif;
