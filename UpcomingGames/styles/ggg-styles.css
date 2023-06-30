@@ -225,17 +225,19 @@ h3 {
 #page_image {
     width: 50%;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 #second_p {
     flex-grow: 1;
-    margin-right: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #third_p {
     text-align: left;
     position: relative;
-    margin-left: 10px;
+    margin-left: 20px;
     flex-grow: 1;
     width: 50%;
     padding-top: 50px;
