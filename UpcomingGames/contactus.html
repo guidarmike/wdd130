@@ -86,77 +86,76 @@
 
 <body>
 
-    <body>
-        <div id="content">
-            <img id="background-image" src="images/homepage_img_1_2.jpg" alt="Where are we?">
-            <header class="header-content">
-                <a id="logo_link" href="index.html">
-                    <img class="logo" src="images/GGG-logo.jpeg" alt="GGG Logo">
-                </a>
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="index-page-2.html">Destiny 2</a>
-                    <a href="index-page-3.html">The Lords of the Fallen</a>
-                    <a href="contactus.html">Contact Us</a>
-                </nav>
-            </header>
+    <div id="content">
+        <img id="background-image" src="images/homepage_img_1_2.jpg" alt="Where are we?">
+        <header class="header-content">
+            <a id="logo_link" href="index.html">
+                <img class="logo" src="images/GGG-logo.jpeg" alt="GGG Logo">
+            </a>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="index-page-2.html">Destiny 2</a>
+                <a href="index-page-3.html">The Lords of the Fallen</a>
+                <a href="contactus.html">Contact Us</a>
+            </nav>
+        </header>
 
-            <main>
-                <div id="feedback"></div>
-                <form action="/my-handling-form-page" method="post">
-                    <ul>
-                        <li>
-                            <label for="name">Name:</label>
-                            <input type="text" id="name" name="user_name" />
-                        </li>
-                        <li>
-                            <label for="mail">Email:</label>
-                            <input type="email" id="mail" name="user_email" />
-                        </li>
-                        <li>
-                            <label for="msg">Message:</label>
-                            <textarea id="msg" name="user_message"></textarea>
-                        </li>
-                        <li class="button_form">
-                            <button type="submit">Send your message</button>
-                        </li>
-                    </ul>
-                </form>
-            </main>
-            <footer>
-                <p>Goated Gamer's Games &copy; 2023 - Michele Guidara</p>
-                <p><a class="external-link" href="site-plan.html">Site Plan</a></p>
-                <p><a class="external-link" href="contactus.html">Contact Us</a></p>
-                <div class="social">
-                    <a href="https://facebook.com" target="_blank">
-                        <img class="socialmedia" src="images/facebook.png" alt="fb icon">
-                    </a>
-                    <a href="https://twitter.com" target="_blank">
-                        <img class="socialmedia" src="images/twitter.png" alt="twitter icon">
-                    </a>
-                    <a href="https://instagram.com" target="_blank">
-                        <img class="socialmedia" src="images/instagram.png" alt="instagram icon">
-                    </a>
-                </div>
-            </footer>
-        </div>
-        <script>
-            // get the feedback div element so we can do something with it.
-            const feedbackElement = document.getElementById('feedback');
-            // get the form so we can read what was entered in it.
-            const formElement = document.forms[0];
-            // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-            formElement.addEventListener('submit', function (e) {
-                // stop the form from doing the default action.
-                e.preventDefault();
-                // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-                feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
-                // make the feedback element visible.
-                feedbackElement.style.display = "block";
-                // add a class to move everything down so our message doesn't cover it.
-                document.body.classList.toggle('moveDown');
-            });
-        </script>
-    </body>
+        <main>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">Email:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button_form">
+                        <button type="submit">Send your message</button>
+                    </li>
+                </ul>
+            </form>
+        </main>
+        <footer>
+            <p>Goated Gamer's Games &copy; 2023 - Michele Guidara</p>
+            <p><a class="external-link" href="site-plan.html">Site Plan</a></p>
+            <p><a class="external-link" href="contactus.html">Contact Us</a></p>
+            <div class="social">
+                <a href="https://facebook.com" target="_blank">
+                    <img class="socialmedia" src="images/facebook.png" alt="fb icon">
+                </a>
+                <a href="https://twitter.com" target="_blank">
+                    <img class="socialmedia" src="images/twitter.png" alt="twitter icon">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img class="socialmedia" src="images/instagram.png" alt="instagram icon">
+                </a>
+            </div>
+        </footer>
+    </div>
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function (e) {
+            // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+            document.body.classList.toggle('moveDown');
+        });
+    </script>
+</body>
 
 </html>
